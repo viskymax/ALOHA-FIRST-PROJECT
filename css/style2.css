@@ -1,0 +1,769 @@
+
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('project-01/project-01/fonts/Raleway-LightItalic.eot');
+    src: url('project-01/project-01/fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('project-01/project-01/fonts/Raleway-LightItalic.woff') format('woff'),
+        url('project-01/project-01/fonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('project-01/project-01/fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('project-01/project-01/fonts/Raleway-Medium.eot');
+    src: url('project-01/project-01/fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/Raleway-Medium.woff2') format('woff2'),
+        url('project-01/project-01/fonts/Raleway-Medium.woff') format('woff'),
+        url('project-01/project-01/fonts/Raleway-Medium.ttf') format('truetype'),
+        url('project-01/project-01/fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('project-01/project-01/fonts/Raleway-MediumItalic.eot');
+    src: url('project-01/project-01/fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/Raleway-MediumItalic.woff2') format('woff2'),
+        url('project-01/project-01/fonts/Raleway-MediumItalic.woff') format('woff'),
+        url('project-01/project-01/fonts/Raleway-MediumItalic.ttf') format('truetype'),
+        url('project-01/project-01/fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('project-01/project-01/fonts/Raleway-Light.eot');
+    src: url('project-01/project-01/fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/Raleway-Light.woff2') format('woff2'),
+        url('project-01/project-01/fonts/Raleway-Light.woff') format('woff'),
+        url('project-01/project-01/fonts/Raleway-Light.ttf') format('truetype'),
+        url('project-01/project-01/fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('project-01/project-01/fonts/PlayfairDisplay-Regular.eot');
+    src: url('project-01/project-01/fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('project-01/project-01/fonts/PlayfairDisplay-Italic.eot');
+    src: url('project-01/project-01/fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('project-01/project-01/fonts/PlayfairDisplay-Bold.eot');
+    src: url('project-01/project-01/fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('project-01/project-01/fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('project-01/project-01/fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('project-01/project-01/fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('project-01/project-01/fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('project-01/project-01/fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+.top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top img{
+    max-height: 50px;
+}
+
+.alohaLogo{
+    width: 50%;
+    height: 80px;
+    order:1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shoppingCart {
+    width: 50%;
+    height: 80px;
+    order:2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.mainNavigation {
+    width: 100%;
+    min-width: 350px;
+    height: 45px;
+    order: 3;
+    border-top: 1px solid #d7d7d7;
+    text-align: center;
+}
+
+.mainNavigation ul{
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.mainNavigation a{
+    text-decoration: none;
+}
+
+.mainNavigation li {
+    display:inline;
+    color: #e2574c;
+}
+
+.mainNavigation li:hover {
+    color: #b64036;
+}
+
+body {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight:300;
+    color: #2d2d2d;
+}
+
+p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+    font-size: 16px;
+
+}
+
+section {
+    width: 100%;  
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-family: 'Playfair Display';
+    color: white;
+    text-shadow: 1px 1px 2px gray;
+    font-weight:300;
+}
+
+.banner h2{
+    font-family: 'Raleway';
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 300;
+
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    font-size: 34px;
+    margin: 20px;
+}
+
+
+.banner {
+    background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./images/banner-girl.png') no-repeat, url('project-01/project-01/images/flower-bkgd.jpg');
+    background-position: center, center bottom, center;
+    background-size: cover, auto 350px, cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.handcrafted {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.mostLoved {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex-grow:1;
+    width: 50%;
+    height: 50vw;
+   
+}
+
+.mens,.womens{
+    flex-grow:2;
+    width: 100%;
+}
+
+.flexbox div{
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.flexbox a{
+    text-transform:uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px gray;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.flexbox a:hover{
+    color: #ede59e;
+   
+}
+
+.mens {
+
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('project-01/project-01/images/mens-category.jpg');
+    background-size: cover,cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+.trends {
+ 
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('project-01/project-01/images/trends-category.jpg');
+    background-size: cover,cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+.glasses{
+  
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('project-01/project-01/images/glasses-category.jpg');
+    background-size: cover,cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+.sale{
+ 
+
+  
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('project-01/project-01/images/sale-category.jpg');
+    background-size: cover,cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+.bags {
+
+    
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('project-01/project-01/images/bags-category.jpg');
+    background-size: cover,cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+.womens{
+
+    background-image: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('project-01/project-01/images/womens-category.jpg');
+    background-size: cover,cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
+
+
+.productCarousel{
+    height: 680px;
+}
+.productCarousel p {
+    text-transform: uppercase;
+    color: #969696;
+    margin-top:0;
+    margin-bottom: 0;
+
+
+}
+
+
+.productCarousel h2{
+    font-family: 'Playfair Display';
+    color: #e2574c;
+    font-weight: 500;
+    margin: 12px;
+
+}
+.clothingType {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.cost {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.subscribe {
+    background-image: linear-gradient(to right, rgba(225,225,0,0.02), rgba(225,225,0,0.02)), url('project-01/project-01/images/wave-bkgd.jpg');
+    background-repeat: cover;
+    background-position: bottom;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.subscribe h1 {
+    color: white;
+    text-shadow: 1px 2px 2px gray;
+    margin-top: 40px;
+}
+
+.subscribe p{
+    color: white;
+    text-shadow: 1px 2px 2px gray;
+    width: 90%;
+}
+
+/* .formadjust {
+    border: 3px dotted green;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 300px; 
+}*/
+
+
+form{
+ width: 85%;
+ height: 40px;
+ background-color: white;
+ border-radius: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ min-width: 350px;
+ margin-top: 10px;
+ margin-bottom: 45px;
+}
+
+
+/* .placingButton {
+    border: 3px solid red;
+    background-color: white;
+    border-radius: 50px;
+    min-width: 300px;
+    width: 90%;
+} */
+    
+.subscribe input { /*whynotscaling */
+   
+    
+    padding-left: 30px;
+    font-family: 'Raleway';
+    font-size: 14px;
+    color: #969696;
+    border: 1px #d7d7d7;
+    height: 40px;
+    border-radius: 50px;
+    
+
+}
+
+.subscribe button {
+    font-family: 'Raleway';
+    font-size: 14px;
+    background-color:#e2574c;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    height: 34px;
+    width: 100px;
+margin-right: 3px;
+}
+
+/* .subscribe button {
+    font-family: 'Raleway';
+    font-size: 14px;
+    background-color: #e2574c;
+    color: white;
+    height: 34px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    margin-right: 3px;
+} */
+
+.boxbox{
+    /* height: 200px; */
+    width: 100%;
+    /* background: purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #242424;
+    border-top: 10px solid white;
+}
+
+.bottom{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.bottom p{
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: none;
+    background-color: lightgreen;
+}
+
+
+
+.leftFooter {
+    color: white;
+    font-family: 'Playfair Display';
+    text-align: center;
+}
+
+.email {
+    color: white;
+}
+
+.email:hover{
+    color: #b64036;
+}
+
+.location {
+    color: #969696;
+}
+
+.socialMedia {
+    width: 100%;
+    text-align: center;
+}
+.socialMedia a{
+    text-decoration: none;
+    color: white;
+}
+
+.socialMedia ul{
+    list-style: none;
+    word-spacing: 20px;
+    padding: 0px;
+}
+
+.socialMedia li {
+    display:inline;
+
+    
+}
+
+.socialMedia a:hover {
+    color: #b64036;
+}
+.socialMedia li{
+    display: none;
+}  
+
+
+
+/* .socialMedia ul {
+    color: white;
+    list-style: none;
+    text-align: center;
+    /* line-height: 2.0; */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    /* background-color: purple;
+}
+.socialMedia { */
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    /* background-color: orange;
+} */
+
+/* .socialMedia a{
+    color: white;
+    text-decoration: none;
+}
+.socialMedia a:hover {
+    color: #b64036;
+} */
+
+
+
+/* 
+.socialMedia i{
+    /* position: absolute; */
+
+    /* display: inline-block;
+} */ 
+
+/* .socialMedia li{
+    display: none;
+} */ 
+
+@media all and (min-width:600px) {
+    .alohaLogo{
+        
+        width: 18%;
+    }
+    
+    .shoppingCart{
+        order:3;
+   
+        width: 18%;
+    }
+
+    .mainNavigation {
+       
+        order:2;
+        border-top:none;
+        width: auto;
+        
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    .banner h2 {
+        font-weight: 500;
+
+    }
+
+    .banner h1{
+        font-size: 3.57rem;
+    }
+
+    h1 {
+        font-size: 2.857rem;
+
+    }
+
+    .flexbox a{
+        font-size: 2.142rem;
+        
+    }
+    
+    .box {
+        width: 25%;
+        height: 25vw;
+    }
+
+    .mens,.womens{
+        width:50%;
+    }
+
+
+    .clothingType {
+        font-size: 0.929rem;
+        font-weight: 400px;
+    }
+
+    .productCarousel h2{
+        font-size: 26px;
+    
+    
+    }
+
+    .productCarousel p {
+        text-transform: uppercase;
+        color: #969696;
+   
+    
+    
+    }
+
+    
+    form{
+        width: 60%;
+        height: 50px;
+        background-color: white;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 500px;
+        margin-top: 10px;
+        margin-bottom: 45px;
+    }
+
+    .subscribe input { /*whynotscaling */
+   
+    
+        padding-left: 30px;
+        font-family: 'Raleway';
+        font-weight: 200;
+        font-size: 1.142rem;
+        color: #969696;
+        border: 1px #d7d7d7;
+        height: 40px;
+        border-radius: 50px;
+        
+    
+    }
+    
+    .subscribe button {
+        font-family: 'Raleway';
+        font-size: 1.142rem;
+        background-color:#e2574c;
+        color: white;
+        border-radius: 50px;
+        border: none;
+        height: 44px;
+        width: 120px;
+        margin-right: 3px;
+    }
+
+    .bottom {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+       
+        background-color: green;
+        /* border-top: 10px solid white; */
+     
+      } 
+      
+    .bottom p{
+        font-size: 1.143rem;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+
+
+    }
+
+    .leftFooter {
+
+        text-align: left;
+       
+        background-color: purple;
+      
+    }
+
+  
+
+    .location {
+        color: #969696;
+
+
+    }
+
+    .whatup {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+    }
+
+    .socialMedia{
+    
+        text-align: left;
+        background-color: yellow;
+        width: auto;
+    }
+
+    .footer {
+        background-color: pink;
+        height: 200px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .containerA{
+        height: 10vw;
+        width: 50vw;
+        background-color: gray;
+    }
+
+    .containerB{
+        background-color: blue;
+        height: 10vw;
+        width: 50vw;
+    }
+}
+
+
